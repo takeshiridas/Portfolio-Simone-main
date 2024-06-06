@@ -740,11 +740,11 @@ a.link-SH:hover {
     align-items: flex-start;
 }
 
-.email-p {
+.contact-p {
     color: white;
 }
 
-.email-p:hover {
+.contact-p:hover {
     cursor: pointer;
     color:  grey;
     text-decoration: underline;
@@ -768,9 +768,10 @@ a.link-SH:hover {
 }
 
 .contact-icon {
-    cursor: default;
+    width: 32px; /* Defina a largura desejada */
+    height: 32px; /* Defina a altura desejada */
     margin-right: 0.5rem; /* Espaçamento entre o ícone e o texto do link */
-    align-self: flex-start; /* Alinhar o ícone à esquerda */
+    cursor: default;
 }
 
 .email-preview-container {
