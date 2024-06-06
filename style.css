@@ -1,0 +1,614 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%; /* Garante que o corpo ocupe toda a largura da tela */
+    height: 100%; /* Garante que o corpo ocupe toda a altura da tela */
+    margin-left: -160px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85,85,85);
+}
+
+/* TRANSITIONS */
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+#desktop-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 13vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: rgb(181,181,181);
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 700px;
+}
+
+.hamburger-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:nth-child(1) {
+    transform: none;
+}
+
+.hamburger-icon span:nth-child(2) {
+    opacity: 1;
+}
+
+.hamburger-icon span:nth-child(3) {
+    transform: none;
+}
+
+/* SECTIONS */
+
+section {
+    position: relative;
+    padding-bottom: 60px;
+    padding-top: 4vh;
+    margin: 4vh 10rem; /* Ajuste a margem para cima e para baixo */
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+/* Adicione um espaçamento maior entre as seções */
+section:not(:last-child) {
+    margin-bottom: 8vh; /* Ajuste o espaçamento inferior */
+}
+
+/* SLIDESHOW */
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 0;
+    z-index: 2;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide img {
+    height: 520px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -70px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(192, 192, 192, 0.5);
+    z-index: 10;
+    margin-right: 219px;
+    margin-left: 220px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(192, 192, 192, 0.8);
+}
+
+/* SH SECTION */
+
+#SH-estruturas-metalicas {
+    height: 1000px;
+    margin-right: -200px;
+    background: linear-gradient(to bottom, rgb(16,41,77), rgb(98,60,96));
+    z-index: 1;
+}
+
+.SH-title {
+    color: white;
+}
+
+.paragrafo-SH {
+    color: white;
+    width: 800px; /* Limita a largura máxima do parágrafo a 80% da largura do contêiner */
+    margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+    padding: 0 20px; /* Adiciona padding para que o texto não encoste nas bordas */
+    text-align: center; /* Opcional: justifica o texto para melhor legibilidade */
+}
+
+a.link-SH {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+a.link-SH:hover {
+    color: whitesmoke;
+    text-underline-offset: 0.2rem;
+    text-decoration-color: whitesmoke;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+    margin-right: -200px;
+    margin-bottom: -32px;
+    background: linear-gradient(to bottom, rgb(6,17,49), rgb(16,41,77));
+}
+
+.section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+    text-align: center;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p2 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    padding-top: 4rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.title-perfil {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    color: white;
+}
+
+.btn-color-1, .btn-color-2 {
+    border: rgb(6,17,49) 0.1rem solid;
+}
+
+.btn-color-1:hover, .btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1, .btn-color-2 {
+    background: none;
+    color: white;
+}
+
+.btn-color-1:hover, .btn-color-2:hover {
+    background: rgb(0,0,0);
+    border: rgb(255,255,255) 0.1rem solid;
+}
+
+.btn-container {
+    gap: 1rem;
+}
+
+/*BUTTONS SH */
+
+.SH-btn {
+    color: rgb(6,17,49);
+    border: 1px solid rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 1rem; /* Espaçamento superior */
+    border-radius: 0.8rem;
+}
+
+.SH-btn:hover {
+    background: rgb(6,17,49);
+}
+
+/* ENGENHARIA SECTION */
+
+#engenharia-estruturas-metalicas {
+    margin-right: -200px;
+    margin-top: -63px;
+    background: linear-gradient(to bottom, rgb(98,60,96), rgb(186,112,88));
+}
+
+.engenharia-title {
+    color: white;
+}
+
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+    padding-top: 100px; /* Adicionar padding na parte superior da seção "about" */
+    margin-right: -200px;
+    margin-top: -64px;
+    background: linear-gradient(to bottom, rgb(218,151,80), rgb(186,112,88));
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: 50px;
+    margin-right: 90px;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.icon.arrow {
+    position: relative;
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    cursor: pointer;
+    left: 1150px; /* Ajuste a posição para a direita */
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+}
+
+.details-container-sobre { /* Apenas na parte sobre mim */
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+    width: 100%;
+}
+
+.sobre-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-left: -50px;
+    color: white    ;
+}
+
+.sobre-sub-title {
+    font-size: 1.5rem;
+}
+
+.paragrafo-sobre-mim {
+    font-size: 1rem;
+    text-align: center;
+    width: 900px; /* Limita a largura máxima do parágrafo a 80% da largura do contêiner */
+    margin-left: 293px;
+    color: white;
+}
+
+/* FAMILIA VALDUGA SECTION */
+
+#famiglia-valduga {
+    position: relative;
+    padding: 2rem;
+    background: linear-gradient(to bottom, rgb(186,112,88), rgb(218,151,80));
+    margin-top: -64px;
+    width: 100%; /* Ajusta para ocupar toda a largura */
+    max-width: 100%; /* Ajuste para ocupar toda a largura */
+}
+
+.valduga-sub-title {
+    color: white;
+    text-align: center;
+}
+
+.valduga-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.details-container {
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+    padding: 1rem;
+    border: 1px solid rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.details-container:nth-child(3n+1),
+.details-container:nth-child(3n+2) {
+    margin-bottom: 1rem;
+}
+
+.details-container:nth-child(4),
+.details-container:nth-child(5) {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.logo-empresas-img {
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 150px;
+    max-height: 100px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.empresa-title {
+    margin: 1rem 0;
+    color: black;
+    font-size: 1.5rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+}
+
+.empresa-btn {
+    color: black;
+    border: 1px solid rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 1rem;
+}
+
+.empresa-btn:hover {
+    background: rgb(230, 230, 230);
+}
+
+
+/* CONTACT */
+
+#contact {
+    margin-right: -200px;
+    margin-top: -64px;
+    background: rgb(186,112,88);
+    height: calc(100vh - 64px); /* Altura igual à altura da tela menos a margem superior */
+    margin-bottom: 0; /* Remover a margem inferior */
+}
+
+.contact-title {
+    color: black;
+    text-align: center;
+}
+
+.contact-info-container {
+    margin-left: 170px;
+}
+
+
+.email {
+    font-weight: 450;
+}
+
+.email:hover {
+    cursor: pointer;
+    color: white;
+}

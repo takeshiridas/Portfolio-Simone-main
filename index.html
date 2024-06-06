@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simone Von Spitzenberger</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='#profile'">Simone V. Spitzenberger</div>
+        <div>
+            <ul class="nav-links">                    
+                <li><a href="#SH-estruturas-metalicas">SH Estruturas Metálicas</a></li>
+                <li><a href="#engenharia-estruturas-metalicas">Engenharia - Estruturas Metálicas</a></li>
+                <li><a href="#famiglia-valduga">Famiglia Valduga</a></li>
+                <li><a href="#about">Sobre Mim</a></li>                   
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Simone V. Spitzenberger</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#SH-estruturas-metalicas" onclick="toggleMenu()">SH Estruturas Metálicas</a></li>
+                <li><a href="#engenharia-estruturas-metalicas" onclick="toggleMenu()">Engenharia - Estruturas Metálicas</a></li>
+                <li><a href="#famiglia-valduga" onclick="toggleMenu()">Famiglia Valduga</a></li>
+                <li><a href="#about" onclick="toggleMenu()">Sobre Mim</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Simone profile picture">
+        </div>
+        <div class="section__text">
+            <h1 class="title-perfil">Simone Von Spitzenberger</h1>
+            <p class="section__text__p2">Engenheira Civil</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/curriculo-simone.pdf')">Baixar Currículo</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contato</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/simone-von-spitzenberger-a2164131/'">   
+            </div>
+        </div>
+    </section> 
+    
+    <section id="SH-estruturas-metalicas" class="slideshow-section">
+        <h1 class="title SH-title">SH Estruturas Metálicas</h1>
+        <div class="slideshow-background"></div>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="./assets/ambev-ampliacao-mg.png" alt="Ampliacao Sete Lagoas - MG" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="./assets/ambev-ampliacao-agudos-sp.png" alt="Ampliacao Agudos - SP" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="./assets/ambev-implementacao-cdd-bahia.png" alt="Implementacao CDD - Bahia" style="width:100%">
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="section-container">
+            <div class="text-container">
+                <p class="paragrafo-SH">A <a href="http://www.shestruturas.com.br/" class="link-SH">SH Estruturas Metálicas Ltda</a> iniciou suas atividades no ano de 1984, no Município de Novo
+                    Hamburgo, que fica a 40km da capital Porto Alegre.
+                    Desde então, tem ampliado sua atuação no mercado, investindo na expansão de seu Parque
+                    Fabril, na aquisição de equipamentos e a qualificação de seus funcionários, visando sempre a
+                    melhor forma de atender seus clientes e qualificar seus produtos.
+                    Oferecendo soluções direcionadas à necessidade do cliente, executando projetos específicos
+                    em estrutura metálica, sempre priorizando a segurança, economia e qualidade dos serviços.</p>
+            </div>    
+            <div class="btn-container">
+                <button class="btn btn-color-2 SH-btn" onclick="window.open('./assets/apresentacao-SH.pdf')">Apresentacao SH</button>
+                <button class="btn btn-color-2 SH-btn" onclick="location.href='http://www.shestruturas.com.br/'")">Acessar site SH</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="engenharia-estruturas-metalicas">
+        <h1 class="title engenharia-title">Engenharia - Estruturas Metálicas</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/engenharia-estruturas-metalicas.png" alt="Engenharia - Estruturas Metálicas" class="section-pic">
+            </div>
+            <div class="text-container">
+                <p class="paragrafo-SH">A Engenharia de Estruturas Metálicas é uma área da engenharia civil que atua no desenvolvimento de projetos, cálculos e dimensionamento de estruturas metálicas. Essas estruturas são amplamente utilizadas na construção civil, devido à sua versatilidade, resistência e durabilidade. A equipe de engenheiros especializados em estruturas metálicas da SH Estruturas Metálicas está preparada para desenvolver soluções personalizadas e inovadoras para os mais diversos tipos de projetos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="famiglia-valduga">
+        <p class="section__text__p1"></p>
+        <h1 class="title valduga-sub-title">Famiglia Valduga</h1>
+        <p class="paragrafo-SH">Sou representante de vendas corporativa do grupo Famiglia Valduga, faço vendas para empresas e vendas em volume</p>
+        <h2 class="valduga-sub-title">Empresas</h2>
+        <div class="valduga-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/casa-valduga.png" alt="Casa Valduga" class="logo-empresas-img">
+                </div>
+                <h2 class="valduga-sub-title empresa-title">Casa Valduga</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 empresa-btn" onclick="window.open('./assets/catalogo-casa-valduga.pdf')">Acessar catálogo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/casa-madeira.png" alt="Casa Madeira" class="logo-empresas-img">
+                </div>
+                <h2 class="valduga-sub-title empresa-title">Casa Madeira</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 empresa-btn" onclick="window.open('./assets/catalogo-casa-madeira.pdf')">Acessar catálogo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/ponto-nero.png" alt="Ponto Nero" class="logo-empresas-img">
+                </div>
+                <h2 class="valduga-sub-title empresa-title">Ponto Nero</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 empresa-btn" onclick="window.open('./assets/catalogo-ponto-nero.pdf')">Acessar catálogo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/domno-importadora.png" alt="Domno - Importadora" class="logo-empresas-img">
+                </div>
+                <h2 class="valduga-sub-title empresa-title">Domno - Importadora</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 empresa-btn" onclick="window.open('./assets/catalogo-domno.pdf')">Acessar catálogo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/brewine-leopoldina.png" alt="Brewine Leopoldina - Cervejaria" class="logo-empresas-img">
+                </div>
+                <h2 class="valduga-sub-title empresa-title">Brewine Leopoldina - Cervejaria</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 empresa-btn" onclick="window.open('./assets/catalogo-brewine-leopoldina.pdf')">Acessar catálogo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <p class="section__text__p1"></p>
+        <h1 class="title sobre-title">Sobre Mim</h1>
+        <div class="section-container">
+            <!--  <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Foto de Perfil" class="about-pic">
+            </div>  -->  <!-- Sem foto de perfil -->
+            <div  class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container-sobre">
+                        <img src="./assets/experience.png" alt="Ícone de Experiência" class="icon">
+                        <h3 class="sobre-sub-title">Experiência Profissional</h3>
+                        <br/>
+                        <p>30+ Anos</p>
+                        <p>Engenheira Civil</p> <!-- Colocar as experiências profissionais da Simone aqui -->
+                    </div>
+                    <div class="details-container-sobre">
+                        <img src="./assets/education.png" alt="Ícone de Educação" class="icon">
+                        <h3 class="sobre-sub-title">Educação</h3>
+                        <br/>
+                        <p>Graduada em Engenharia Civil</p>
+                        <p>Pós-Graduada em Engenharia Civil</p> <!-- Colocar a educação da Simone aqui -->
+                    </div>
+                    <div class="details-container-sobre">
+                        <img src="./assets/checkmark.png" alt="Ícone de Acervo" class="icon">
+                        <h3 class="sobre-sub-title">Acervo Técnico</h3>
+                        <div class="article-container">
+                            <article>
+                                <div>
+                                    <p>Linhas de Transmissão</p>
+                                    <p>Passarelas</p>
+                                    <p>Pontes Flutuantes</p>
+                                    <p>Estruturas Náuticas</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p class="paragrafo-sobre-mim">Olá, meu nome é Simone e gostaria de compartilhar um pouco sobre minha trajetória profissional.
+
+                        Tenho ampla experiência no desenvolvimento de projetos, cálculos de estruturas metálicas, orçamentos, montagens e acompanhamento de obras. Também sou especializada em projetos ambientais, focando em energias renováveis, com desenvolvimento e aprovação junto a órgãos competentes.
+                        
+                        No campo comercial e técnico, atuo em siderurgia, metalurgia, energia, agroindústria e obras industriais, incluindo múltiplos andares e portuárias. Minhas habilidades incluem liderança, negociação, administração de contratos e gerenciamento de obras turnkey. Desenvolvo soluções, analiso viabilidades, elaboro propostas técnico-comerciais, gerencio serviços e mantenho uma comunicação eficaz com clientes.
+                        
+                        Tenho um vasto acervo técnico em obras de linha de transmissão, passarelas, pontes flutuantes e estruturas náuticas. Trabalho com princípios éticos e em sinergia com a equipe para superar desafios e alcançar os melhores resultados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+    
+    <section id="contact">
+        <h1 class="title contact-title">Meu Contato</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon">
+                <p class="email"><a href="mailto:famigliavalduga@spitzrepresentacoes.com.br">Famigliavalduga@spitzrepresentacoes.com.br</a></p>
+                <p class="email"><a href="mailto:shestruturas@spitzrepresentacoes.com.br">Shestruturas@spitzrepresentacoes.com.br</a></p>
+                <p class="email"><a href="mailto:simone.engenharia@spitzrepresentacoes.com.br">Simone.engenharia@spitzrepresentacoes.com.br</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="app.js"></script>
+</body>
+</html>

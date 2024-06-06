@@ -1,0 +1,15 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: white; /* Adicione esta linha para definir a cor de fundo */
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+}
