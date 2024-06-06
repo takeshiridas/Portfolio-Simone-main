@@ -47,4 +47,12 @@ function ocultarDescricao(id) {
     descricao.style.display = "none";
 }
 
+function toggleEmailPreview() {
+    const emailPreviewContainer = document.querySelector('.email-preview-container');
+    const overlay = document.querySelector('.overlay');
+    const isVisible = emailPreviewContainer.style.display === 'flex';
+    emailPreviewContainer.style.display = isVisible ? 'none' : 'flex';
+    overlay.style.display = isVisible ? 'none' : 'block';
+}
+
 

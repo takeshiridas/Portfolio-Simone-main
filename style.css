@@ -111,7 +111,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: white;
     transition: all 0.3s ease-in-out;
 }
 
@@ -119,7 +119,7 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: black;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -131,7 +131,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.4rem;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
@@ -198,38 +198,20 @@ section:not(:last-child) {
     top: 50%; /* Ajuste a parte superior para 50% do container pai */
     left: 50%; /* Ajuste a parte esquerda para 50% do container pai */
     transform: translate(-50%, -50%); /* Move o elemento de volta metade de sua própria largura e altura */
-    color: white; /* Cor do texto */
+    color: black; /* Cor do texto */
     padding: 10px; /* Espaçamento interno */
     border-radius: 5px; /* Borda arredondada */
 }
 
-.descricao-text {
-    color: white;
-    margin: 0; /* Remove margem padrão */
-    text-align: center; /* Centraliza o texto */
-}
-
 .preview {
-    position: relative; /* Para posicionar as descrições corretamente */
+    position: relative;
     width: 300px;
     height: 450px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
+    background: white;
     border-radius: 10px;
     margin-right: 20px;
     transition: transform 0.3s;
-}
-
-.preview img {
-    display: block; /* Certifique-se de que a imagem é um bloco */
-    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.inicio-title {
-    font-weight: 400;
-    color: white;
-    text-align: center;
-    margin-top: 330px;
 }
 
 .preview:hover {
@@ -237,6 +219,64 @@ section:not(:last-child) {
     z-index: 1;
 }
 
+.preview img {
+    display: block;
+    width: 150px; /* Ajuste a largura da imagem conforme necessário */
+    height: 150px;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    position: absolute;
+    top: 40px; /* Ajuste a distância da borda superior conforme necessário */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza a imagem verticalmente */
+}
+
+.inicio-title {
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    margin-top: 350px;
+}
+
+.descricao-container {
+    display: none;
+    position: absolute;
+    top: 60%; /* Ajuste a posição vertical da descrição */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.descricao-container-valduga, .descricao-container-SH, .descricao-container-engenharia {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 42%; /* Posiciona a lista abaixo do título com um pequeno espaçamento */
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    padding: 5px;
+    max-width: 200px;
+}
+
+.descricao-texto-engenharia {
+    font-weight: 400;
+    font-size: 0.9em; /* Reduza o tamanho da fonte */
+    margin: 5px 0; /* Adicione um pequeno espaçamento vertical entre os itens da lista */
+}
+
+.descricao-texto-valduga {
+    font-weight: 400;
+    font-size: 0.85em;
+    margin: 3px 0;
+}
+
+.descricao-texto-SH {
+    font-weight: 400;
+    font-size: 0.75em;
+    margin: 2px 0;
+}
 
 /* SLIDESHOW */
 
@@ -461,6 +501,36 @@ a.link-SH:hover {
     color: white;
 }
 
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+}
+
+.details-container-engenharia {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    width: 400px;
+    height: 400px;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+    margin-left: 565px;
+}
+
+.p-engenharia {
+    font-weight: 450;
+    font-size: 1.1em;
+    margin-top: 30px;
+    cursor: default;
+}
+
 /* ABOUT SECTION */
 
 #about {
@@ -475,7 +545,7 @@ a.link-SH:hover {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    margin-left: 50px;
+    margin-left: 340px;
     margin-right: 90px;
 }
 
@@ -485,6 +555,7 @@ a.link-SH:hover {
 }
 
 .about-containers, .about-details-container {
+    width: 800px;
     display: flex;
 }
 
@@ -498,16 +569,6 @@ a.link-SH:hover {
     height: auto;
     cursor: pointer;
     left: 1150px; /* Ajuste a posição para a direita */
-}
-
-.details-container {
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
-    border-color: rgb(163,163,163);
-    text-align: center;
 }
 
 .details-container-sobre { /* Apenas na parte sobre mim */
@@ -643,10 +704,53 @@ a.link-SH:hover {
 
 #contact {
     margin-right: -200px;
-    margin-top: -64px;
-    background: rgb(186,112,88);
+    margin-top: -63px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(186, 112, 88);
     height: calc(100vh - 64px); /* Altura igual à altura da tela menos a margem superior */
     margin-bottom: 0; /* Remover a margem inferior */
+    position: relative; /* Necessário para o overlay */
+}
+
+.contact-info-upper-container {
+    width: 400px;
+    display: flex;
+    justify-content: space-between; /* Distribuir os elementos ao longo do espaço disponível */
+    align-items: flex-start; /* Alinhar os itens ao topo */
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(0, 0, 0);
+    background: rgb(186, 112, 88);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.linkedin-container {
+    margin-left: auto;
+    margin-right: 20px; /* Adicionar espaço à direita */
+    display: flex;
+    align-items: flex-start;
+}
+
+.email-container {
+    margin-right: auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+.email-p {
+    color: white;
+}
+
+.email-p:hover {
+    cursor: pointer;
+    color:  grey;
+    text-decoration: underline;
+    text-decoration-color: rgb(163,163,163);
+    text-underline-offset: 0.5rem;
+    transition: all 300ms ease;
 }
 
 .contact-title {
@@ -655,15 +759,53 @@ a.link-SH:hover {
 }
 
 .contact-info-container {
-    margin-left: 170px;
+    display: flex;
+    align-items: center; /* Alinhar verticalmente */
 }
 
-
-.email {
-    font-weight: 450;
+.contact-info-container p {
+    font-size: larger;
 }
 
-.email:hover {
+.contact-icon {
+    cursor: default;
+    margin-right: 0.5rem; /* Espaçamento entre o ícone e o texto do link */
+    align-self: flex-start; /* Alinhar o ícone à esquerda */
+}
+
+.email-preview-container {
+    display: none;
+    flex-direction: column; /* Ajustar para coluna */
+    width: 500px;
+    height: 160px;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: black;
+    background: rgb(186, 112, 88);
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    position: absolute;
+    top: 50px; /* Ajustar conforme necessário */
+    left: 50%; /* Centralizar horizontalmente */
+    transform: translateX(-50%);
+    z-index: 1001; /* Garantir que está acima do overlay */
+}
+
+.email-preview-container .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
     cursor: pointer;
-    color: white;
+    align-self: flex-end; /* Alinhar o botão de fechar à direita */
+}
+
+.overlay {
+    display: none; /* Ocultar por padrão */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000; /* Garantir que está abaixo do email-preview-container */
 }
