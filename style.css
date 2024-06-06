@@ -768,10 +768,10 @@ a.link-SH:hover {
 }
 
 .contact-icon {
-    width: 32px; /* Defina a largura desejada */
-    height: 32px; /* Defina a altura desejada */
-    margin-right: 0.5rem; /* Espaçamento entre o ícone e o texto do link */
     cursor: default;
+    margin-right: 0.5rem; /* Espaçamento entre o ícone e o texto do link */
+    align-self: flex-start; /* Alinhar o ícone à esquerda */
+    max-height: 1.8rem;
 }
 
 .email-preview-container {
@@ -792,6 +792,17 @@ a.link-SH:hover {
     z-index: 1001; /* Garantir que está acima do overlay */
 }
 
+.linkedin-icon {
+    margin-top: 3px;
+    width: 25px;
+    height: 25px;
+}
+
+.whatsapp-icon {
+    width: 29px;
+    height: 29px;
+}
+
 .email-preview-container .close-btn {
     background: none;
     border: none;
@@ -809,4 +820,16 @@ a.link-SH:hover {
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     z-index: 1000; /* Garantir que está abaixo do email-preview-container */
+}
+
+/* FOOTER */
+
+footer {
+    margin-left: 160px;
+    background: rgb(186, 112, 88);
+    margin-right: -200px;
+}
+
+footer p {
+    color: black;
 }
