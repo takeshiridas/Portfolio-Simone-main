@@ -42,20 +42,30 @@
     </nav>
 
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Simone profile picture">
-        </div>
-        <div class="section__text">
-            <h1 class="title-perfil">Simone Von Spitzenberger</h1>
-            <p class="section__text__p2">Engenheira Civil</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/curriculo-simone.pdf')">Baixar Currículo</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contato</button>
+        <div id="menu-inicio">
+            <div class="preview" id="preview-SH" onclick="location.href='./#SH-estruturas-metalicas'" onmouseover="mostrarDescricao('descricao-SH')" onmouseout="ocultarDescricao('descricao-SH')">
+                <img src="./assets/SH-logo.png" alt="Logo SH">
+                <h3 class="inicio-title">SH - Estruturas Metálicas</h3>
+                <div id="descricao-SH" class="descricao-container">
+                    <p class="descricao-text">Descrição da SH - Estruturas Metálicas.</p>
+                </div>
             </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/simone-von-spitzenberger-a2164131/'">   
+            <div class="preview" id="preview-engenharia" onclick="location.href='./#engenharia-estruturas-metalicas'" onmouseover="mostrarDescricao('descricao-engenharia')" onmouseout="ocultarDescricao('descricao-engenharia')">
+                <img src="" alt="">
+                <h3 class="inicio-title">Engenharia - Estruturas Metálicas</h3>
+                <div id="descricao-engenharia" class="descricao-container">
+                    <p class="descricao-text">Descrição da Engenharia - Estruturas Metálicas.</p>
+                </div>
+            </div>
+            <div class="preview" id="preview-valduga" onclick="location.href='./#famiglia-valduga'" onmouseover="mostrarDescricao('descricao-valduga')" onmouseout="ocultarDescricao('descricao-valduga')">
+                <img src="./assets/valduga-logo.png" alt="Logo Valduga">
+                <h3 class="inicio-title">Famiglia Valduga</h3>
+                <div id="descricao-valduga" class="descricao-container">
+                    <p class="descricao-text">Descrição da Famiglia Valduga.</p>
+                </div>
             </div>
         </div>
+                
     </section> 
     
     <section id="SH-estruturas-metalicas" class="slideshow-section">
