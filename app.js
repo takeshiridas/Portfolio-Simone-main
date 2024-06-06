@@ -37,4 +37,14 @@ function toggleMenu() {
 
 }
 
+function mostrarDescricao(id) {
+    var descricao = document.getElementById(id);
+    descricao.style.display = "block";
+}
+
+function ocultarDescricao(id) {
+    var descricao = document.getElementById(id);
+    descricao.style.display = "none";
+}
+
 
