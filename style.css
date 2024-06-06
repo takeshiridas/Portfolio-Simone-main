@@ -184,6 +184,25 @@ section:not(:last-child) {
     margin-bottom: 8vh; /* Ajuste o espaçamento inferior */
 }
 
+/* MENU CARROSSEL */
+
+#carrossel {
+    display: flex;
+}
+
+.preview {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    transition: transform 0.3s;
+}
+
+.preview:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
 /* SLIDESHOW */
 
 .slideshow-container {
