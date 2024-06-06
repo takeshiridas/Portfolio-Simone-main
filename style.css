@@ -822,14 +822,8 @@ a.link-SH:hover {
     z-index: 1000; /* Garantir que está abaixo do email-preview-container */
 }
 
-/* FOOTER */
-
-footer {
-    margin-left: 160px;
-    background: rgb(186, 112, 88);
-    margin-right: -200px;
-}
-
-footer p {
+.footer-p {
+    margin-top: 75px;
     color: black;
+    text-align: center;
 }
