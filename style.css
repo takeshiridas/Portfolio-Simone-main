@@ -184,24 +184,59 @@ section:not(:last-child) {
     margin-bottom: 8vh; /* Ajuste o espaçamento inferior */
 }
 
-/* MENU CARROSSEL */
+/* MENU INICIAL */
 
-#carrossel {
+#menu-inicio {
     display: flex;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.descricao-container {
+    display: none; /* Inicialmente, a descrição estará oculta */
+    position: absolute; /* Posicionamento absoluto em relação ao container pai */
+    top: 50%; /* Ajuste a parte superior para 50% do container pai */
+    left: 50%; /* Ajuste a parte esquerda para 50% do container pai */
+    transform: translate(-50%, -50%); /* Move o elemento de volta metade de sua própria largura e altura */
+    color: white; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+.descricao-text {
+    color: white;
+    margin: 0; /* Remove margem padrão */
+    text-align: center; /* Centraliza o texto */
 }
 
 .preview {
-    width: 200px;
-    height: 200px;
+    position: relative; /* Para posicionar as descrições corretamente */
+    width: 300px;
+    height: 450px;
     border: 1px solid #ccc;
+    border-radius: 10px;
     margin-right: 20px;
     transition: transform 0.3s;
 }
 
+.preview img {
+    display: block; /* Certifique-se de que a imagem é um bloco */
+    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.inicio-title {
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-top: 330px;
+}
+
 .preview:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     z-index: 1;
 }
+
 
 /* SLIDESHOW */
 
@@ -270,6 +305,7 @@ section:not(:last-child) {
 }
 
 .SH-title {
+    margin-top: 30px;
     color: white;
 }
 
@@ -417,7 +453,7 @@ a.link-SH:hover {
 
 #engenharia-estruturas-metalicas {
     margin-right: -200px;
-    margin-top: -63px;
+    margin-top: -64px;
     background: linear-gradient(to bottom, rgb(98,60,96), rgb(186,112,88));
 }
 
