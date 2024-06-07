@@ -53,6 +53,6 @@ function toggleEmailPreview() {
     const isVisible = emailPreviewContainer.style.display === 'flex';
     emailPreviewContainer.style.display = isVisible ? 'none' : 'flex';
     overlay.style.display = isVisible ? 'none' : 'block';
-}
+}   
 
 
