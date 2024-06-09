@@ -7,10 +7,6 @@
     <title>Simone Von Spitzenberger</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
-    
-    <!-- Inclua o CSS do Slick Carousel -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>    
 </head>
 
 <body>
@@ -20,7 +16,7 @@
         <div>
             <ul class="nav-links">                    
                 <li><a href="#SH-estruturas-metalicas">SH Estruturas Metálicas</a></li>
-                <li><a href="#engenharia-estruturas-metalicas">Engenharia - Estruturas Metálicas</a></li>
+                <li><a href="#engenharia-estruturas-metalicas">Spitz Engenharia</a></li>
                 <li><a href="#famiglia-valduga">Famiglia Valduga</a></li>
                 <li><a href="#about">Sobre Mim</a></li>                   
                 <li><a href="#contact">Contato</a></li>
@@ -37,7 +33,7 @@
             </div>
             <div class="menu-links">
                 <li><a href="#SH-estruturas-metalicas" onclick="toggleMenu()">SH Estruturas Metálicas</a></li>
-                <li><a href="#engenharia-estruturas-metalicas" onclick="toggleMenu()">Engenharia - Estruturas Metálicas</a></li>
+                <li><a href="#engenharia-estruturas-metalicas" onclick="toggleMenu()">Spitz Engenharia</a></li>
                 <li><a href="#famiglia-valduga" onclick="toggleMenu()">Famiglia Valduga</a></li>
                 <li><a href="#about" onclick="toggleMenu()">Sobre Mim</a></li>
                 <li><a href="#contact">Contato</a></li>
@@ -61,8 +57,8 @@
                 </div>
             </div>
             <div class="preview" id="preview-engenharia" onclick="location.href='./#engenharia-estruturas-metalicas'" onmouseover="mostrarDescricao('descricao-engenharia')" onmouseout="ocultarDescricao('descricao-engenharia')">
-                <h3 class="inicio-title">Engenharia - Estruturas Metálicas</h3>
-                <img src="" alt="">
+                <h3 class="inicio-title">Spitz Engenharia</h3>
+                <img src="./assets/engenharia-logo.png" alt="Logo Engenharia">
                 <div id="descricao-engenharia" class="descricao-container descricao-container-engenharia">
                     <ul id="lista-engenharia">
                         <li class="descricao-texto-engenharia">Linhas de Transmissão</li>
@@ -92,7 +88,7 @@
     <section id="SH-estruturas-metalicas" class="slideshow-section">
         <h1 class="title SH-title">SH Estruturas Metálicas</h1>
         <div class="slideshow-background"></div>
-        <div class="slideshow-container">
+        <div id="slideshow1" class="slideshow-container">
             <div class="slide fade">
                 <img src="./assets/ambev-ampliacao-mg.png" alt="Ampliacao Sete Lagoas - MG" style="width:100%">
             </div>
@@ -103,9 +99,9 @@
                 <img src="./assets/ambev-implementacao-cdd-bahia.png" alt="Implementacao CDD - Bahia" style="width:100%">
             </div>
         </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
+        <a class="prev" onclick="plusSlides(-1, 'slideshow1')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'slideshow1')">&#10095;</a>
+        <div id="indicators1" class="indicators"></div>
         <div class="section-container">
             <div class="text-container">
                 <p class="paragrafo-SH">A <a href="http://www.shestruturas.com.br/" class="link-SH">SH Estruturas Metálicas Ltda</a> iniciou suas atividades no ano de 1984, no Município de Novo
@@ -124,22 +120,37 @@
     </section>
     
     <section id="engenharia-estruturas-metalicas">
-        <h1 class="title engenharia-title">Engenharia - Estruturas Metálicas</h1>
-        <div class="section-container">
-            <div class="details-container-engenharia">
-                <img src="./assets/checkmark.png" alt="Ícone de Acervo" class="icon">
-                <h3 class="sobre-sub-title acervo-tecnico">Acervo Técnico</h3>
-                <div>
-                    <p class="p-engenharia">Linhas de Transmissão</p>
-                    <p class="p-engenharia">Passarelas</p>
-                    <p class="p-engenharia">Pontes Flutuantes</p>
-                    <p class="p-engenharia">Estruturas Náuticas</p>
-                </div>
+        <h1 class="title engenharia-title">Spitz Engenharia</h1>
+        <div class="slideshow-background"></div>
+        <div id="slideshow2" class="slideshow-container">
+            <div class="slide fade">
+                <img src="./assets/estruturas-flutuantes.png" alt="Estruturas Flutuantes" style="width:100%">
             </div>
-            <div class="text-container">
-                <p class="paragrafo-SH">A Engenharia de Estruturas Metálicas é uma área da engenharia civil que atua no desenvolvimento de projetos, cálculos e dimensionamento de estruturas metálicas. Essas estruturas são amplamente utilizadas na construção civil, devido à sua versatilidade, resistência e durabilidade. A equipe de engenheiros especializados em estruturas metálicas da SH Estruturas Metálicas está preparada para desenvolver soluções personalizadas e inovadoras para os mais diversos tipos de projetos.</p>
+            <div class="slide fade">
+                <img src="./assets/parque-eolico.png" alt="Parque Eolico" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="./assets/linhas-de-transmissao.png" alt="Linhas de Transmissao" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="./assets/modernas-estruturas-nauticas.png" alt="Modernas Estruturas Nauticas" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="./assets/modernas-estruturas-nauticas-2.png" alt="Modernas Estruturas Nauticas 2" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="./assets/passarela-ciclistas.png" alt="Passarela Ciclistas" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="./assets/passarela-flutuante.png" alt="Passarela Flutuante" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="./assets/projetos-de-subestacao.png" alt="Projetos de Subestacao" style="width:100%">
             </div>
         </div>
+        <a class="prev" onclick="plusSlides(-1, 'slideshow2')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'slideshow2')">&#10095;</a>
+        <div id="indicators2" class="indicators"></div>
     </section>
 
     <section id="famiglia-valduga">
@@ -215,6 +226,16 @@
                         <br/>
                         <p class="about-p">Graduada em Engenharia Civil</p>
                         <p class="about-p">Pós-Graduada em Engenharia Civil</p> <!-- Colocar a educação da Simone aqui -->
+                    </div>
+                    <div class="details-container-sobre">
+                        <img src="./assets/checkmark.png" alt="Ícone de Acervo" class="icon">
+                        <h3 class="sobre-sub-title" id="acervo-tecnico">Acervo Técnico</h3>
+                        <div>
+                            <p class="about-p">Linhas de Transmissão</p>
+                            <p class="about-p">Passarelas</p>
+                            <p class="about-p">Pontes Flutuantes</p>
+                            <p class="about-p">Estruturas Náuticas</p>
+                        </div>
                     </div>
                 </div>
                 <div class="text-container">

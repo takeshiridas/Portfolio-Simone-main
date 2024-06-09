@@ -1,32 +1,70 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+function initSlideshows() {
+    var slideshows = ['slideshow1', 'slideshow2'];
+    slideshows.forEach(function(id, index) {
+        var container = document.getElementById(id);
+        var slides = container.getElementsByClassName('slide');
+        var indicatorsContainer = document.getElementById('indicators' + (index + 1));
 
-// Função para avançar/navegar pelos slides
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+
+            // Cria os indicadores
+            var indicator = document.createElement('span');
+            indicator.classList.add('indicator');
+            indicator.setAttribute('onclick', `currentSlide(${i + 1}, '${id}')`);
+            indicatorsContainer.appendChild(indicator);
+        }
+
+        slides[0].style.display = 'block';
+        indicatorsContainer.children[0].classList.add('active');
+        container.currentSlide = 0;
+
+        // Configura a mudança automática de slides a cada 5 segundos
+        setInterval(function() {
+            plusSlides(1, id);
+        }, 5000);
+    });
 }
 
-// Função para mostrar um slide específico
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function plusSlides(n, slideshowId) {
+    var container = document.getElementById(slideshowId);
+    showSlides(container.currentSlide + n, slideshowId);
 }
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("slide");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+function currentSlide(n, slideshowId) {
+    showSlides(n - 1, slideshowId);
+}
+
+function showSlides(n, slideshowId) {
+    var container = document.getElementById(slideshowId);
+    var slides = container.getElementsByClassName('slide');
+    var indicatorsContainer = document.getElementById('indicators' + slideshowId.slice(-1));
+    var indicators = indicatorsContainer.getElementsByClassName('indicator');
+
+    if (n >= slides.length) {
+        n = 0;
     }
-    slides[slideIndex-1].style.display = "block";  
+    if (n < 0) {
+        n = slides.length - 1;
+    }
+
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+
+    for (var i = 0; i < indicators.length; i++) {
+        indicators[i].className = indicators[i].className.replace(' active', '');
+    }
+
+    slides[n].style.display = 'block';
+    indicators[n].className += ' active';
+    container.currentSlide = n;
 }
 
-// Automatizar a transição dos slides
-setInterval(function() {
-    plusSlides(1);
-}, 5000); // Mudar a cada 5 segundos
-
+// Chamar initSlideshows diretamente porque o script é carregado após o DOM estar pronto
+document.addEventListener("DOMContentLoaded", function() {
+    initSlideshows();
+});
 
 function toggleMenu() {
     const menu = document.querySelector('.menu-links');

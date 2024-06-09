@@ -230,6 +230,12 @@ section:not(:last-child) {
     transform: translateX(-50%); /* Centraliza a imagem verticalmente */
 }
 
+#preview-engenharia img {
+    width: 130px;
+    height: 150px;
+    top: 50px;
+}
+
 .inicio-title {
     font-weight: 400;
     color: white;
@@ -256,7 +262,7 @@ section:not(:last-child) {
     transform: translateX(-50%);
     color: white;
     padding: 5px;
-    max-width: 200px;
+    max-width: 200px; 
 }
 
 .descricao-texto-engenharia {
@@ -293,7 +299,7 @@ section:not(:last-child) {
 }
 
 .slide img {
-    height: 520px;
+    height: 600px;
 }
 
 .fade {
@@ -332,6 +338,30 @@ section:not(:last-child) {
 
 .prev:hover, .next:hover {
     background-color: rgba(192, 192, 192, 0.8);
+}
+
+/* Estilo dos indicadores */
+
+.indicators {
+    text-align: center;
+    padding: 20px;
+    background: transparent; /* Fundo transparente */
+}
+
+.indicator {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    border: 2px solid black; /* Borda para criar a bolinha */
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent; /* Fundo transparente */
+}
+
+.active {
+    background-color: #717171; /* Cor de preenchimento quando ativo */
+    border: 2px solid #717171; /* Borda da bolinha ativa */
 }
 
 /* SH SECTION */
@@ -378,13 +408,6 @@ a.link-SH:hover {
     margin-right: -200px;
     margin-bottom: -32px;
     background: linear-gradient(to bottom, rgb(6,17,49), rgb(16,41,77));
-}
-
-.section__pic-container {
-    display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
 }
 
 .section__text {
@@ -496,6 +519,7 @@ a.link-SH:hover {
     margin-right: -200px;
     margin-top: -64px;
     background: linear-gradient(to bottom, rgb(98,60,96), rgb(186,112,88));
+    height: 900px;
 }
 
 .engenharia-title {
@@ -512,11 +536,12 @@ a.link-SH:hover {
 }
 
 .details-container-engenharia {
+    position: relative;
     padding: 1.5rem;
     flex: 1;
     background: rgb(51,29,56);
     width: 400px;
-    height: 400px;
+    height: 200px;
     border-radius: 2rem;
     border: rgb(53,53,53) 0.1rem solid;
     border-color: rgb(163,163,163);
@@ -524,17 +549,7 @@ a.link-SH:hover {
     margin-left: 565px;
 }
 
-.acervo-tecnico {
-    color: white;
-}
 
-.p-engenharia {
-    color: white;
-    font-weight: 450;
-    font-size: 1.1em;
-    margin-top: 30px;
-    cursor: default;
-}
 
 /* ABOUT SECTION */
 
@@ -610,6 +625,10 @@ a.link-SH:hover {
     font-size: 1.1em;
     margin-top: 5px;
     cursor: default;
+}
+#acervo-tecnico {
+    color: white;
+    margin-bottom: 10px;
 }
 
 .paragrafo-sobre-mim {
@@ -718,7 +737,7 @@ a.link-SH:hover {
 
 #contact {
     margin-right: -200px;
-    margin-top: -63px;
+    margin-top: -64px;
     display: flex;
     justify-content: center;
     flex-direction: column;
