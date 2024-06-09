@@ -2,6 +2,7 @@
     #desktop-nav {
         display: none;
     }
+
     #hamburger-nav {
         display: flex;
         position: fixed;
@@ -9,6 +10,163 @@
         left: 0;
         width: 100%;
         z-index: 1000;
-        background-color: black; /* Adicione esta linha para definir a cor de fundo */
+        background-color: black;
+    }
+
+    /* Ajustes gerais */
+    body {
+        margin-left: -16px; /* Remover espaço em branco à esquerda */
+        margin-right: -100px;
+    }
+
+    section {
+        margin: 2vh 1rem; /* Reduzindo margin-top para encostar as sections */
+    }
+
+    /* Ajustes para o menu inicial */
+    #menu-inicio {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .preview {
+        width: 80%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 0.8rem; /* Diminuir fonte */
+        line-height: 1.2; /* Diminuir espaçamento */
+    }
+
+    .preview img {
+        width: 100px;
+        height: 100px;
+        top: 20px;
+    }
+
+    .inicio-title {
+        margin-top: 200px;
+    }
+
+    .descricao-container {
+        top: 70%;
+    }
+
+    .descricao-container-valduga, 
+    .descricao-container-SH, 
+    .descricao-container-engenharia {
+        top: 55%;
+    }
+
+    /* Ajustes para o slideshow */
+    .slideshow-container {
+        max-width: 100%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .slide img {
+        height: auto;
+        width: 100%;
+    }
+
+    .prev, .next {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    /* Ajustes para a seção SH */
+    #SH-estruturas-metalicas {
+        margin-right: 0;
+    }
+
+    /* Ajustes para a seção de perfil */
+    #profile {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .section__text {
+        width: 80%;
+    }
+
+    /* Ajustes para a seção de contato */
+    #contact {
+        margin-right: 0;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .contact-info-upper-container {
+        width: 100%;
+    }
+
+    .email-preview-container {
+        width: 90%;
+    }
+
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-info-container p {
+        font-size: 1rem;
+    }
+
+    /* Ajustes para a seção "about" */
+    #about {
+        margin-right: 0;
+        padding: 2rem 1rem;
+    }
+
+    .about-containers {
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+
+    .about-details-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-pic {
+        width: 100%;
+    }
+
+    .icon.arrow {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .details-container-sobre {
+        width: 100%;
+    }
+
+    .paragrafo-sobre-mim {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* Ajustes para a seção Famiglia Valduga */
+    #famiglia-valduga {
+        padding: 2rem 1rem;
+    }
+
+    .valduga-details-container {
+        flex-direction: column;
+    }
+
+    .details-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Ajustes gerais para os botões */
+    .btn {
+        width: auto;
     }
 }

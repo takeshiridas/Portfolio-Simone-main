@@ -378,14 +378,6 @@ section:not(:last-child) {
     color: white;
 }
 
-.paragrafo-SH {
-    color: white;
-    width: 800px; /* Limita a largura máxima do parágrafo a 80% da largura do contêiner */
-    margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
-    padding: 0 20px; /* Adiciona padding para que o texto não encoste nas bordas */
-    text-align: center; /* Opcional: justifica o texto para melhor legibilidade */
-}
-
 a.link-SH {
     color: white;
     text-decoration: underline;
@@ -497,15 +489,19 @@ a.link-SH:hover {
 /*BUTTONS SH */
 
 .SH-btn {
-    color: rgb(6,17,49);
-    border: 1px solid rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
-    padding: 0.5rem 1rem;
+    width: 170px;
+    background-color: rgb(17, 30, 58);
+    color: white;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
-    margin-top: 1rem; /* Espaçamento superior */
-    border-radius: 0.8rem;
+    transition: all 300ms ease;
+    margin-top: 10px;
 }
+
 
 .SH-btn:hover {
     background: rgb(51,29,56);
@@ -650,6 +646,15 @@ a.link-SH:hover {
     max-width: 100%; /* Ajuste para ocupar toda a largura */
 }
 
+.paragrafo-valduga{
+    color: white;
+    width: 800px; /* Limita a largura máxima do parágrafo a 80% da largura do contêiner */
+    margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+    padding: 0 20px; /* Adiciona padding para que o texto não encoste nas bordas */
+    text-align: center; /* Opcional: justifica o texto para melhor legibilidade */
+}
+
+
 .valduga-sub-title {
     color: white;
     text-align: center;
@@ -719,9 +724,9 @@ a.link-SH:hover {
 }
 
 .empresa-btn {
-    color: black;
+    color: white;
     border: 1px solid rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    background: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: background 0.3s;
@@ -729,7 +734,7 @@ a.link-SH:hover {
 }
 
 .empresa-btn:hover {
-    background: rgb(230, 230, 230);
+    background: black;
 }
 
 
