@@ -215,6 +215,7 @@ section:not(:last-child) {
 }
 
 .preview:hover {
+    cursor: pointer;
     transform: scale(1.2);
     z-index: 1;
 }
@@ -646,7 +647,22 @@ a.link-SH:hover {
     max-width: 100%; /* Ajuste para ocupar toda a largura */
 }
 
+.valduga-title {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+
+}
+
+
+.valduga-sub-title {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
 .paragrafo-valduga{
+    font-size: 1.3rem;
     color: white;
     width: 800px; /* Limita a largura máxima do parágrafo a 80% da largura do contêiner */
     margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
@@ -654,10 +670,12 @@ a.link-SH:hover {
     text-align: center; /* Opcional: justifica o texto para melhor legibilidade */
 }
 
-
-.valduga-sub-title {
-    color: white;
-    text-align: center;
+.compre-direto-vinicola {
+    color: rgb(181,181,181);
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .valduga-details-container {
