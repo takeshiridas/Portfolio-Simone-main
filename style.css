@@ -326,7 +326,7 @@ section:not(:last-child) {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    background-color: rgba(192, 192, 192, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 10;
     margin-right: 219px;
     margin-left: 220px;
@@ -546,96 +546,6 @@ a.link-SH:hover {
     margin-left: 565px;
 }
 
-
-
-/* ABOUT SECTION */
-
-#about {
-    position: relative;
-    padding-top: 100px; /* Adicionar padding na parte superior da seção "about" */
-    margin-right: -200px;
-    margin-top: -64px;
-    background: linear-gradient(to bottom, rgb(218,151,80), rgb(186,112,88));
-}
-
-.about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    margin-left: 340px;
-    margin-right: 90px;
-}
-
-.about-details-container {
-    justify-content: center;
-    flex-direction: column;
-}
-
-.about-containers, .about-details-container {
-    width: 800px;
-    display: flex;
-}
-
-.about-pic {
-    border-radius: 2rem;
-}
-
-.icon.arrow {
-    position: relative;
-    width: 40px; /* Ajuste o tamanho conforme necessário */
-    height: auto;
-    cursor: pointer;
-    left: 1150px; /* Ajuste a posição para a direita */
-}
-
-.details-container-sobre { /* Apenas na parte sobre mim */
-    padding: 1.5rem;
-    flex: 1;
-    background: rgb(111,58,26);
-    border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
-    border-color: rgb(163,163,163);
-    text-align: center;
-}
-
-.section-container {
-    gap: 4rem;
-    height: 80%;
-    width: 100%;
-}
-
-.sobre-title {
-    font-size: 3rem;
-    text-align: center;
-    margin-left: -50px;
-    color: white    ;
-}
-
-.sobre-sub-title {
-    font-size: 1.5rem;
-    color: white;
-    margin-bottom: -10px;
-}
-
-.about-p {
-    color: white;
-    font-size: 1.1em;
-    margin-top: 5px;
-    cursor: default;
-}
-#acervo-tecnico {
-    color: white;
-    margin-bottom: 10px;
-}
-
-.paragrafo-sobre-mim {
-    font-size: 1rem;
-    text-align: center;
-    width: 900px; /* Limita a largura máxima do parágrafo a 80% da largura do contêiner */
-    margin-left: 293px;
-    color: white;
-}
-
 /* FAMILIA VALDUGA SECTION */
 
 #famiglia-valduga {
@@ -755,6 +665,92 @@ a.link-SH:hover {
     background: black;
 }
 
+/* ABOUT SECTION */
+
+#about {
+    padding-top: 100px; /* Adicionar padding na parte superior da seção "about" */
+    margin-right: -200px;
+    margin-top: -64px;
+    background: linear-gradient(to bottom, rgb(218,151,80), rgb(186,112,88));
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-left: 340px;
+    margin-right: 90px;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+    width: 800px;
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.icon.arrow {
+    position: relative;
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    cursor: pointer;
+    left: 1150px; /* Ajuste a posição para a direita */
+}
+
+.details-container-sobre { /* Apenas na parte sobre mim */
+    padding: 1.5rem;
+    flex: 1;
+    background: rgb(111,58,26);
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+    width: 100%;
+}
+
+.sobre-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-left: -50px;
+    color: white    ;
+}
+
+.sobre-sub-title {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: -10px;
+}
+
+.about-p {
+    color: white;
+    font-size: 1.1em;
+    margin-top: 5px;
+    cursor: default;
+}
+#acervo-tecnico {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.paragrafo-sobre-mim {
+    font-size: 1rem;
+    text-align: center;
+    width: 900px; /* Limita a largura máxima do parágrafo a 80% da largura do contêiner */
+    margin-left: 293px;
+    color: white;
+}
 
 /* CONTACT */
 
