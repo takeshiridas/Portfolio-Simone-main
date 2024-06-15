@@ -328,7 +328,7 @@ section:not(:last-child) {
     user-select: none;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 10;
-    margin-right: 219px;
+    margin-right: 219.5px;
     margin-left: 220px;
 }
 
@@ -532,20 +532,6 @@ a.link-SH:hover {
     text-align: center;
 }
 
-.details-container-engenharia {
-    position: relative;
-    padding: 1.5rem;
-    flex: 1;
-    background: rgb(51,29,56);
-    width: 400px;
-    height: 200px;
-    border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
-    border-color: rgb(163,163,163);
-    text-align: center;
-    margin-left: 565px;
-}
-
 /* FAMILIA VALDUGA SECTION */
 
 #famiglia-valduga {
@@ -555,6 +541,7 @@ a.link-SH:hover {
     margin-top: -64px;
     width: 100%; /* Ajusta para ocupar toda a largura */
     max-width: 100%; /* Ajuste para ocupar toda a largura */
+    margin-right: -60px;
 }
 
 .valduga-title {
@@ -690,18 +677,6 @@ a.link-SH:hover {
 .about-containers, .about-details-container {
     width: 800px;
     display: flex;
-}
-
-.about-pic {
-    border-radius: 2rem;
-}
-
-.icon.arrow {
-    position: relative;
-    width: 40px; /* Ajuste o tamanho conforme necessário */
-    height: auto;
-    cursor: pointer;
-    left: 1150px; /* Ajuste a posição para a direita */
 }
 
 .details-container-sobre { /* Apenas na parte sobre mim */
