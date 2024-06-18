@@ -75,15 +75,28 @@ function toggleMenu() {
 
 }
 
+// Função para verificar se o dispositivo suporta eventos de toque
+function isTouchDevice() {
+    return 'ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0;
+    descricao.style.display = "block"
+}
+
 function mostrarDescricao(id) {
+    if (isTouchDevice()) {
+        return;
+    }
     var descricao = document.getElementById(id);
     descricao.style.display = "block";
 }
 
 function ocultarDescricao(id) {
+    if (isTouchDevice()) {
+        return;
+    }
     var descricao = document.getElementById(id);
     descricao.style.display = "none";
 }
+
 
 function toggleEmailPreview() {
     const emailPreviewContainer = document.querySelector('.email-preview-container');

@@ -284,3 +284,321 @@
         margin: 0 auto; /* Centralizar botões */
     }
 }
+
+@media screen and (max-width: 1024px) {
+    #menu-inicio {
+        margin-top: 12rem;
+    }
+
+    .inicio-title {
+        margin-top: 8rem;
+        font-size: 1.5rem;
+    }
+
+    .SH-title {
+        font-size: 5rem;
+        margin-top: 7rem;
+    }
+
+    .next-engenharia, .prev-engenharia, .next-SH, .prev-SH {
+        margin-top: -6rem;
+        margin-right: 7rem;
+        margin-left: 7rem;
+    }
+
+    #engenharia-estruturas-metalicas {
+        margin-top: -8rem;
+    }
+
+    .engenharia-title {
+        font-size: 5rem;
+        margin-top: 7rem;
+    }
+
+    #famiglia-valduga {
+        margin-top: -8rem;
+    }
+
+    .valduga-title {
+        font-size: 5rem;
+        margin-top: 7rem;
+    }
+
+    .compre-direto-vinicola {
+        font-size: 3rem;
+    }
+
+    .paragrafo-valduga {
+        font-size: 2rem;
+    }
+
+    .valduga-sub-title {
+        font-size: 3rem;
+    }
+
+    .valduga-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem; /* Ajustar espaçamento */
+        margin-top: 2rem;
+    }
+
+    .details-container {
+        flex: 1 1 calc(50% - 1rem); /* Ajustar flex */
+        max-width: calc(50% - 1rem); /* Ajustar largura */
+        height: 300px;
+        padding: 1rem;
+        border: 1px solid rgb(163, 163, 163);
+        background: rgb(144, 75, 20);
+        border-radius: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto; /* Ajustar altura */
+        box-sizing: border-box;    
+    }
+
+    .details-container:nth-child(3) {
+        height: 300px;
+    }
+
+    .details-container:nth-child(4) {
+        height: 300px;
+    }
+
+    .empresa-title {
+        font-size: 2rem;
+    }
+
+    #about {
+        margin-top: -8rem;
+    }
+
+    .sobre-title {
+        font-size: 5rem;
+        margin-top: 7rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #hamburger-nav {
+        padding: 1rem;
+    }
+
+    .preview:hover {
+        transform: scale(1);
+    }
+
+    .inicio-title {
+        margin-top: 8rem;
+        font-size: 1.25rem;
+    }
+
+    #SH-estruturas-metalicas {
+        height: 750px;
+    }
+
+    .valduga-title {
+        font-size: 1.5rem;
+    }
+
+    .valduga-sub-title {
+        font-size: 1.25rem;
+    }
+
+    .paragrafo-valduga {
+        font-size: 0.875rem;
+    }
+
+    .compre-direto-vinicola {
+        font-size: 1rem;
+    }
+
+    .valduga-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem; /* Ajustar espaçamento */
+        margin-top: 2rem;
+    }
+
+    .details-container {
+        flex: 1 1 calc(50% - 1rem); /* Ajustar flex */
+        max-width: calc(50% - 1rem); /* Ajustar largura */
+        max-height: 260px; /* Ajustar altura */
+        padding: 1rem;
+        border: 1px solid rgb(163, 163, 163);
+        background: rgb(144, 75, 20);
+        border-radius: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto; /* Ajustar altura */
+        box-sizing: border-box;    
+    }
+
+    .details-container:nth-child(5) {
+        max-height: 280px;
+    }
+
+    .empresa-title {
+        font-size: 0.875rem;
+    }
+
+    .contact-title {
+        font-size: 1.25rem;
+    }
+
+    .contact-info-container p {
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #hamburger-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu-inicio {
+        margin-top: 7rem;
+    }
+
+    .inicio-title {
+        margin-top: 8rem;
+        font-size: 1rem;
+    }
+
+    .preview:hover {
+        transform: scale(1);
+    }
+
+    .preview img, #preview-engenharia img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .descricao-container-valduga, 
+    .descricao-container-SH, 
+    .descricao-container-engenharia {
+        top: 45%;
+        padding: 0.5rem;
+    }
+
+    #SH-estruturas-metalicas {
+        height: 700px;
+    }
+
+    .SH-title {
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+
+    .slide img {
+        max-height: 200px;
+    }
+    
+    .next-SH, .prev-SH, .next-engenharia, .prev-engenharia {
+        margin-right: -0.3rem;
+        margin-left: -1.3rem;
+        width: 0;
+    }
+
+    .next-SH, .prev-SH {
+        margin-top: 1rem;
+    }
+
+    .next-engenharia, .prev-engenharia {
+        margin-top: 2rem;
+    }
+
+    #engenharia-estruturas-metalicas {
+        margin-top: -4.7rem;
+        height: 700px;
+    }
+
+    .engenharia-title {
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+
+    #famiglia-valduga {
+        margin-top: -4.7rem;
+    }
+
+    .valduga-title {
+        font-size: 3rem;
+    }
+
+    .valduga-sub-title {
+        font-size: 2rem;
+    }
+
+    .paragrafo-valduga {
+        font-size: 1rem;
+    }
+
+    .compre-direto-vinicola {
+        font-size: 1.5rem;
+    }
+
+    .valduga-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem; /* Ajustar espaçamento */
+        margin-top: 2rem;
+    }
+
+    .details-container {
+        flex: 1 1 calc(50% - 1rem); /* Ajustar flex */
+        max-width: calc(50% - 1rem); /* Ajustar largura */
+        max-height: 260px; /* Ajustar altura */
+        padding: 1rem;
+        border: 1px solid rgb(163, 163, 163);
+        background: rgb(144, 75, 20);
+        border-radius: 1rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto; /* Ajustar altura */
+        box-sizing: border-box;    
+    }
+
+    .details-container:nth-child(5) {
+        max-height: 280px;
+    }
+
+    .empresa-title {
+        font-size: 0.75rem;
+    }
+
+    #about {
+        margin-top: -4.7rem;
+    }
+
+    .sobre-title {
+        font-size: 3rem;
+    }
+
+    #contact {
+        margin-top: -4.7rem;
+    }
+
+    .contact-title {
+        font-size: 3rem;
+    }
+
+    .contact-info-container p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        max-width: 200px;
+    }
+}
+
