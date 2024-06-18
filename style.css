@@ -244,16 +244,6 @@ section:not(:last-child) {
     margin-top: 350px;
 }
 
-.descricao-container {
-    display: none;
-    position: absolute;
-    top: 60%; /* Ajuste a posição vertical da descrição */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-    border-radius: 5px;
-}
-
 .descricao-container-valduga, .descricao-container-SH, .descricao-container-engenharia {
     flex-direction: column;
     align-items: center;
@@ -313,7 +303,7 @@ section:not(:last-child) {
     to { opacity: 1; }
 }
 
-.prev, .next {
+.prev-SH, .next-SH {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -332,12 +322,40 @@ section:not(:last-child) {
     margin-left: 220px;
 }
 
-.next {
+.next-SH {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+.prev-SH:hover, .next-SH:hover {
+    background-color: rgba(192, 192, 192, 0.8);
+}
+
+.prev-engenharia, .next-engenharia {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -70px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    margin-right: 219.5px;
+    margin-left: 220px;
+}
+
+.next-engenharia {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev-engenharia:hover, .next-engenharia:hover {
     background-color: rgba(192, 192, 192, 0.8);
 }
 

@@ -48,24 +48,22 @@
         top: 20px;
     }
 
-    .inicio-title {
-        margin-top: 2rem;
-        font-size: 1.5rem;
-        text-align: center;
+    #preview-engenharia img {
+        width: 90px;
+        height: 100px;
+        top: 20px;
     }
 
-    .descricao-container {
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        padding: 1rem;
+    .inicio-title {
+        margin-top: 8rem;
+        font-size: 1.5rem;
+        text-align: center;
     }
 
     .descricao-container-valduga, 
     .descricao-container-SH, 
     .descricao-container-engenharia {
-        top: 55%;
+        top: 40%;
         width: 90%;
         padding: 1rem;
     }
@@ -92,9 +90,16 @@
         object-fit: contain; /* Ajusta a imagem para caber no contêiner sem cortar */
     }
 
-    .next, .prev {
+    .next-SH, .prev-SH {
         margin-right: 0;
-        margin-left: 0;
+        margin-left: -1rem;
+        margin-top: -13rem;
+    }
+
+    .next-engenharia, .prev-engenharia {
+        margin-right: 0;
+        margin-left: -1rem;
+        margin-top: -12rem;
     }
 
     /* Ajustes para a seção SH */
@@ -197,7 +202,7 @@
     #about {
         margin-right: 0; /* Ajustar margem direita */
         padding: 2rem 1rem; /* Ajustar padding */
-        margin-top: 0; /* Remover margem superior negativa */
+        margin-top: -3.88rem; /* Remover margem superior negativa */
     }
 
     .about-containers {
@@ -258,6 +263,10 @@
         width: 90%; /* Ajustar largura */
         height: auto; /* Ajustar altura */
         padding: 1rem; /* Adicionar padding */
+    }
+
+    .whatsapp-icon {
+        margin-left: -3.3rem;
     }
 
     .contact-title {
