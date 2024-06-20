@@ -291,6 +291,7 @@ section:not(:last-child) {
 
 .slide img {
     height: 600px;
+    width: 100%; /* Adicione esta linha para garantir que a imagem ocupe 100% do contêiner */
 }
 
 .fade {
@@ -318,13 +319,16 @@ section:not(:last-child) {
     user-select: none;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 10;
-    margin-right: 219.5px;
-    margin-left: 220px;
+}
+
+.prev-SH {
+    left: 0; /* Alinha o botão à esquerda */
+    border-radius: 3px 0 0 3px; /* Ajusta o arredondamento do canto */
 }
 
 .next-SH {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    right: 2.55rem; /* Alinha o botão à direita */
+    border-radius: 3px 0 0 3px; /* Ajusta o arredondamento do canto */
 }
 
 .prev-SH:hover, .next-SH:hover {
@@ -346,18 +350,23 @@ section:not(:last-child) {
     user-select: none;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 10;
-    margin-right: 219.5px;
-    margin-left: 220px;
+}
+
+.prev-engenharia {
+    left: 0; /* Alinha o botão à esquerda */
+    border-radius: 3px 0 0 3px; /* Ajusta o arredondamento do canto */
 }
 
 .next-engenharia {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    right: 2.55rem; /* Alinha o botão à direita */
+    border-radius: 3px 0 0 3px; /* Ajusta o arredondamento do canto */
 }
 
 .prev-engenharia:hover, .next-engenharia:hover {
     background-color: rgba(192, 192, 192, 0.8);
 }
+
+
 
 /* Estilo dos indicadores */
 
@@ -683,11 +692,11 @@ a.link-SH:hover {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    margin-left: 21rem;
     margin-right: 90px;
 }
 
 .about-details-container {
+    margin-left: 12rem;
     justify-content: center;
     flex-direction: column;
 }
@@ -705,6 +714,10 @@ a.link-SH:hover {
     border: rgb(53,53,53) 0.1rem solid;
     border-color: rgb(163,163,163);
     text-align: center;
+}
+
+.text-container {
+    margin-left: -21rem;
 }
 
 .section-container {

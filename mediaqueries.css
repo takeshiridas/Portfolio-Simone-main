@@ -104,6 +104,7 @@
 
     /* Ajustes para a seção SH */
     #SH-estruturas-metalicas {
+        height: 2000px; /* Ajustar altura */
         margin-right: 0; /* Ajustar margem direita */
     }
 
@@ -217,6 +218,11 @@
         width: 100%; /* Definir largura para 100% */
         flex-direction: column; /* Alinhar detalhes em coluna */
         align-items: center; /* Centralizar conteúdo */
+        margin-left: 0;
+    }
+
+    .text-container {
+        margin-left: 0; /* Remover margem esquerda */
     }
 
     .details-container-sobre {
@@ -295,15 +301,29 @@
         font-size: 1.5rem;
     }
 
+    #SH-estruturas-metalicas {
+        height: 1300px;
+    }
+
     .SH-title {
         font-size: 5rem;
         margin-top: 7rem;
+        margin-bottom: 4rem;
     }
 
-    .next-engenharia, .prev-engenharia, .next-SH, .prev-SH {
-        margin-top: -6rem;
+    .slideshow-container {
+        position: relative;
+        max-width: 1000px;
+        margin: auto;
+        margin-bottom: 0;
+        z-index: 2;
+    }
+
+
+    .next-SH, .prev-SH {
+        margin-top: -10rem;
         margin-right: 7rem;
-        margin-left: 7rem;
+        margin-left: 9.5rem;
     }
 
     #engenharia-estruturas-metalicas {
@@ -313,6 +333,13 @@
     .engenharia-title {
         font-size: 5rem;
         margin-top: 7rem;
+        margin-bottom: 4rem;
+    }
+
+    .next-engenharia, .prev-engenharia {
+        margin-top: 2rem;
+        margin-right: 7rem;
+        margin-left: 9.5rem;
     }
 
     #famiglia-valduga {
@@ -379,6 +406,22 @@
     .sobre-title {
         font-size: 5rem;
         margin-top: 7rem;
+    }
+
+    .sobre-sub-title {
+        font-size: 2.5rem;
+    }
+
+    .about-p {
+        font-size: 1.5rem;
+    }
+
+    .paragrafo-sobre-mim {
+        font-size: 1.5rem;
+    }
+
+    #contact {
+        margin-top: -8rem;
     }
 }
 
@@ -502,17 +545,17 @@
     }
     
     .next-SH, .prev-SH, .next-engenharia, .prev-engenharia {
-        margin-right: -0.3rem;
-        margin-left: -1.3rem;
+        margin-right: -1.7rem;
+        margin-left: 0rem;
         width: 0;
     }
 
     .next-SH, .prev-SH {
-        margin-top: 1rem;
+        margin-top: 5rem;
     }
 
     .next-engenharia, .prev-engenharia {
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
 
     #engenharia-estruturas-metalicas {
@@ -530,22 +573,27 @@
     }
 
     .valduga-title {
+        margin-left: -1rem;
         font-size: 3rem;
     }
 
     .valduga-sub-title {
+        margin-left: -1.5rem;
         font-size: 2rem;
     }
 
     .paragrafo-valduga {
+        margin-left: 0.5rem;
         font-size: 1rem;
     }
 
     .compre-direto-vinicola {
+        margin-left: 0.5rem;
         font-size: 1.5rem;
     }
 
     .valduga-details-container {
+        margin-left: -2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -570,11 +618,13 @@
     }
 
     .details-container:nth-child(5) {
-        max-height: 280px;
+        max-height: 300px;
     }
 
     .empresa-title {
-        font-size: 0.75rem;
+        margin-top: -1rem;
+        margin-left: 0.1rem;
+        font-size: 1rem;
     }
 
     #about {
@@ -583,6 +633,18 @@
 
     .sobre-title {
         font-size: 3rem;
+    }
+
+    .sobre-sub-title {
+        font-size: 1.5rem;
+    }
+
+    .about-p {
+        font-size: 1rem;
+    }
+
+    .paragrafo-sobre-mim {
+        font-size: 1rem;
     }
 
     #contact {
