@@ -440,23 +440,56 @@
     }
 
     #SH-estruturas-metalicas {
-        height: 750px;
+        height: 1000px;
+        background: linear-gradient(to bottom, rgb(16,41,77), rgb(98,60,96));
+    }
+
+    .SH-title {
+        font-size: 3rem;
+        margin-top: 6rem;
+    }
+
+    .prev-SH, .next-SH {
+        margin-top: -4rem;
+        margin-right: -2.5rem;
+        margin-left: 0rem;
+    }
+
+    #engeharia-estruturas-metalicas {
+        height: 1000px;
+        background: linear-gradient(to bottom, rgb(98,60,96), rgb(186,112,88));
+    }
+
+    .engenharia-title {
+        font-size: 3rem;
+        margin-top: 6rem;
+    }
+
+    .prev-engenharia, .next-engenharia {
+        margin-top: 0rem;
+        margin-right: -2.5rem;
+        margin-left: 0rem;
+    }
+
+    #famiglia-valduga {
+        height: 1600px;
+        background: linear-gradient(to bottom, rgb(186,112,88), rgb(218,151,80));
     }
 
     .valduga-title {
-        font-size: 1.5rem;
-    }
-
-    .valduga-sub-title {
-        font-size: 1.25rem;
+        font-size: 3rem;
     }
 
     .paragrafo-valduga {
-        font-size: 0.875rem;
+        font-size: 1.25rem;
     }
 
     .compre-direto-vinicola {
-        font-size: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .valduga-sub-title {
+        font-size: 1.75rem;
     }
 
     .valduga-details-container {
@@ -484,11 +517,36 @@
     }
 
     .details-container:nth-child(5) {
-        max-height: 280px;
+        max-height: 300px;
     }
 
     .empresa-title {
-        font-size: 0.875rem;
+        font-size: 1rem;
+    }
+
+    #about {
+        height: 1600px;
+        background: linear-gradient(to bottom, rgb(218,151,80), rgb(186,112,88));
+    }
+
+    .sobre-title {
+        font-size: 3rem;
+    }
+
+    .sobre-sub-title {
+        font-size: 1.5rem;
+    }
+
+    .about-p {
+        font-size: 1rem;
+    }
+
+    .paragrafo-sobre-mim {
+        font-size: 1rem;
+    }
+
+    #contact {
+        background: rgb(186, 112, 88);
     }
 
     .contact-title {
