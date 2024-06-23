@@ -693,6 +693,7 @@ a.link-SH:hover {
     margin-bottom: 2rem;
     margin-top: 2rem;
     margin-right: 90px;
+    margin-left: 9rem;
 }
 
 .about-details-container {
@@ -717,7 +718,7 @@ a.link-SH:hover {
 }
 
 .text-container {
-    margin-left: -21rem;
+    margin-left: -11rem;
 }
 
 .section-container {
